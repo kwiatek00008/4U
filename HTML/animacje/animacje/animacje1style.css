@@ -1,0 +1,28 @@
+
+div{
+    width: 3px;
+    height: 150px;
+    background-color: aqua;
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform-origin: center bottom ;
+    transform: rotate(0deg) ;
+    animation: move 60s steps(60);
+
+    /* animation: move 4s 1s infinite   ; */
+    /* animation-direction: alternate; */
+    /* alternate-w te i we wte 
+    riverse czytana od tylu do 0
+    alternate riverse zaczyna od konca i powtarza
+    steps okreslona ilosc klatek*/
+    
+}
+
+@keyframes move{
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

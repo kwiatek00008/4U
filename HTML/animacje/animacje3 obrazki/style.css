@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    /* overflow hidden zdjecia nachodza na siebie */
+
+}
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    animation: image 12s infinite linear both;
+
+}
+img:nth-last-of-type(2){
+    animation-delay: 4s;
+}
+img:nth-last-of-type(3){
+    animation-delay: 8s;
+}
+
+h1{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 15px;
+    animation: text 12s linear infinite both;
+    
+}
+h1:nth-last-of-type(1){
+    bottom: 20%;
+    right: 20%;
+}
+h1:nth-last-of-type(2){
+    bottom: 40%;
+    left: 10%;
+    animation-delay: 4s;
+}
+h1:nth-last-of-type(3){
+    top: 20%;
+    left: 30%;
+    animation-delay: 8s;
+}
+
+@keyframes image{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    28.33%{
+        opacity: 1;
+    }
+    33.33%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes text{
+    0%{
+    opacity: 0;
+    }
+    5%{
+    opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    23.33%{
+        opacity: 1;
+    }
+    28.33%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
