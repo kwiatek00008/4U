@@ -1,0 +1,9 @@
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\bin\Debug\Kolos 1a.exe.config
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\obj\Debug\Kolos 1a.csprojResolveAssemblyReference.cache
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\obj\Debug\Kolos_1a.Form1.resources
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\obj\Debug\Kolos_1a.Properties.Resources.resources
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\obj\Debug\Kolos 1a.csproj.GenerateResource.Cache
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\bin\Debug\Kolos 1a.exe
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\bin\Debug\Kolos 1a.pdb
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\obj\Debug\Kolos 1a.exe
+c:\users\rafał\documents\visual studio 2013\Projects\Kolos 1a\Kolos 1a\obj\Debug\Kolos 1a.pdb
