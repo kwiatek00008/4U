@@ -1,0 +1,8 @@
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\bin\Debug\kolos 1b.exe.config
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\obj\Debug\kolos_1b.Form1.resources
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\obj\Debug\kolos_1b.Properties.Resources.resources
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\obj\Debug\kolos 1b.csproj.GenerateResource.Cache
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\bin\Debug\kolos 1b.exe
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\bin\Debug\kolos 1b.pdb
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\obj\Debug\kolos 1b.exe
+c:\users\rafał\documents\visual studio 2013\Projects\kolos 1b\kolos 1b\obj\Debug\kolos 1b.pdb
