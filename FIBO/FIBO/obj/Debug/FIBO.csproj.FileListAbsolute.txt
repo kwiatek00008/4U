@@ -1,9 +1,0 @@
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\bin\Debug\FIBO.exe.config
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\bin\Debug\FIBO.exe
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\bin\Debug\FIBO.pdb
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.csprojResolveAssemblyReference.cache
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.Form1.resources
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.Properties.Resources.resources
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.csproj.GenerateResource.Cache
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.exe
-c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.pdb

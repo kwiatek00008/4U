@@ -1,9 +1,0 @@
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\bin\Debug\kolos 1c.exe.config
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\obj\Debug\kolos 1c.csprojResolveAssemblyReference.cache
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\obj\Debug\kolos_1c.Form1.resources
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\obj\Debug\kolos_1c.Properties.Resources.resources
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\obj\Debug\kolos 1c.csproj.GenerateResource.Cache
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\bin\Debug\kolos 1c.exe
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\bin\Debug\kolos 1c.pdb
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\obj\Debug\kolos 1c.exe
-c:\users\rafał\documents\visual studio 2013\Projects\kolos 1c\kolos 1c\obj\Debug\kolos 1c.pdb
