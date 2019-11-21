@@ -1,0 +1,9 @@
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\bin\Debug\Przelicznik walut.exe.config
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\bin\Debug\Przelicznik walut.exe
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\bin\Debug\Przelicznik walut.pdb
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\obj\Debug\Przelicznik walut.csprojResolveAssemblyReference.cache
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\obj\Debug\Przelicznik_walut.Form1.resources
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\obj\Debug\Przelicznik_walut.Properties.Resources.resources
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\obj\Debug\Przelicznik walut.csproj.GenerateResource.Cache
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\obj\Debug\Przelicznik walut.exe
+c:\users\kwiat\documents\visual studio 2013\Projects\Przelicznik walut\Przelicznik walut\obj\Debug\Przelicznik walut.pdb

@@ -1,0 +1,9 @@
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\bin\Debug\OKNA dialogowe DIALOGS.exe.config
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\bin\Debug\OKNA dialogowe DIALOGS.exe
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\bin\Debug\OKNA dialogowe DIALOGS.pdb
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\obj\Debug\OKNA dialogowe DIALOGS.csprojResolveAssemblyReference.cache
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\obj\Debug\OKNA_dialogowe_DIALOGS.Form1.resources
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\obj\Debug\OKNA_dialogowe_DIALOGS.Properties.Resources.resources
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\obj\Debug\OKNA dialogowe DIALOGS.csproj.GenerateResource.Cache
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\obj\Debug\OKNA dialogowe DIALOGS.exe
+c:\users\kwiat\documents\visual studio 2013\Projects\OKNA dialogowe DIALOGS\OKNA dialogowe DIALOGS\obj\Debug\OKNA dialogowe DIALOGS.pdb

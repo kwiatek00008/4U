@@ -1,0 +1,6 @@
+c:\users\kwiat\documents\visual studio 2013\Projects\Metody 2\Metody 2\bin\Debug\Metody 2.exe.config
+c:\users\kwiat\documents\visual studio 2013\Projects\Metody 2\Metody 2\bin\Debug\Metody 2.exe
+c:\users\kwiat\documents\visual studio 2013\Projects\Metody 2\Metody 2\bin\Debug\Metody 2.pdb
+c:\users\kwiat\documents\visual studio 2013\Projects\Metody 2\Metody 2\obj\Debug\Metody 2.csprojResolveAssemblyReference.cache
+c:\users\kwiat\documents\visual studio 2013\Projects\Metody 2\Metody 2\obj\Debug\Metody 2.exe
+c:\users\kwiat\documents\visual studio 2013\Projects\Metody 2\Metody 2\obj\Debug\Metody 2.pdb
