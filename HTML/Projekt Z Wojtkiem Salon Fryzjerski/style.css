@@ -1,6 +1,27 @@
+<<<<<<< HEAD
 .footer{
     text-align: center;
     background-color: black;
     padding: 30px;
     color: white;
+=======
+nav{
+    max-width: 1300px;
+    text-align: right;
+    background-color: grey;
+    padding: 10px 40px ;
+
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 30px;
+    
+    transition: 0.2s;
+    
+    
+>>>>>>> f9321bfe812be1a47e08b1732cc70280b4068f07
 }
