@@ -22,3 +22,7 @@ git branch KW   nowa galaz, potem git checkout KW
 git add -p dodaje
 
 git merge --no-ff KW    dodaje z mojej galezi na mastera
+
+git clone i link
+
+git checkout KW zmienia branch
