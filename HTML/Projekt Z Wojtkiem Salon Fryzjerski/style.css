@@ -1,0 +1,19 @@
+nav{
+    max-width: 1300px;
+    text-align: right;
+    background-color: grey;
+    padding: 10px 40px ;
+
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 30px;
+    
+    transition: 0.2s;
+    
+    
+}
