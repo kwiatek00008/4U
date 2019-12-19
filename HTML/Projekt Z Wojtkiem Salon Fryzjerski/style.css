@@ -1,5 +1,5 @@
 nav{
-    max-width: 1300px;
+    max-width: 2000px;
     text-align: right;
     background-color: grey;
     padding: 10px 40px ;
@@ -9,9 +9,11 @@ nav{
 nav a{
     display: inline-block;
     color: white;
-    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
     margin: 0 30px;
+    font-size: 70%;
+    text-transform: uppercase;
     
     transition: 0.2s;
     
