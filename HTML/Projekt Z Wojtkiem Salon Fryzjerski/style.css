@@ -1,0 +1,49 @@
+*{
+    margin: 0;  
+    padding: 0;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+.logo{
+    border-radius: 50%;
+    background-image: url('images/logo.jpg');
+    background-position: center ;
+    background-size: 200%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 10px 0 30px ;
+}
+.napislogo{
+    float: left;
+    text-align: left;
+    margin: 6px 0;
+    font-weight: bold;
+    color: white;
+}
+
+nav{
+    max-width: 2000px;
+    text-align: right;
+    background-color: grey;
+    padding: 0px 0px ;
+
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 70%;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: 0.2s; 
+    border-top: 3px solid transparent; 
+    box-sizing: border-box;
+    height: 50px;
+}
+nav a:hover{
+    border-top: 3px solid black;
+}
+
