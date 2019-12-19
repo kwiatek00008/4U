@@ -46,4 +46,18 @@ nav a{
 nav a:hover{
     border-top: 3px solid black;
 }
+@media(max-width:411px){
+    .napislogo{
+        display: block;
+        float: top;
+    }
+
+    nav a{
+        display: block;
+        text-align: left;
+        margin:  0 0 0 50% ;
+        background-position-y: 0 0 0 50%;
+    }
+   
+}
 
