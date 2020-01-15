@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Roboto Condensed',sans-serif;
 }
-.logo{
+.logo1{
     border-radius: 50%;
     background-image: url('images/logo.jpg');
     background-position: center ;
@@ -11,21 +11,40 @@
     width: 50px;
     height: 50px;
     float: left;
-    margin: 0 10px 0 30px ;
+    margin: 0 10px 0 30px ;   
+    border-top: none;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+    .logo1:hover{
+    animation: obrot 2s;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+
+    
 }
 .napislogo{
     float: left;
     text-align: left;
-    margin: 6px 0;
+    margin: 5px 100px 0;
     font-weight: bold;
     color: white;
+    
 }
 
 nav{
-    max-width: 2000px;
+    max-width: 4000;
+    max-height: 50px;
     text-align: right;
     background-color: grey;
     padding: 0px 0px ;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* patent zeby pasek nav nie znikal */
 
 }
 
@@ -34,7 +53,7 @@ nav a{
     color: white;
     font-weight: lighter;
     text-decoration: none;
-    margin: 0 50px;
+    margin: 0 40px 0 0;
     font-size: 70%;
     text-transform: uppercase;
     padding: 15px;
@@ -45,6 +64,42 @@ nav a{
 }
 nav a:hover{
     border-top: 3px solid black;
+    animation: obrot 2s   ;
+    font-size: 73%;
+}
+.p1l{
+  margin: 60px 130px 30px 130px ;
+}
+@keyframes lataj{
+    0%{
+        top: 0;
+        left: 25px;
+    }
+
+    50%{
+        top: 0;
+        left: 125px;
+    }
+
+    100%{
+        top: 0;
+        left: 25px;
+    }
+}
+@keyframes obrot{
+    /* 0%{
+        transform:rotate(0deg)
+    } */
+
+    
+    50%{
+        transform: rotate(-5deg);
+    }
+    /* 100%{
+        transform: rotate(0deg);
+    } */
+
+
 }
 @media(max-width:411px){
     .napislogo{
