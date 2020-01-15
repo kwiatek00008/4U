@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav{
     max-width: 2000px;
     text-align: right;
@@ -19,6 +20,13 @@ nav a{
     transition: 0.2s;
     
     
+=======
+.footer{
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+    color: white;
+>>>>>>> d326562da7e57cdc9e22735181473ab5aaf46b52
 =======
 .footer{
     text-align: center;
