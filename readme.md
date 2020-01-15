@@ -26,3 +26,14 @@ git merge --no-ff KW    dodaje z mojej galezi na mastera
 git clone i link
 
 git checkout KW zmienia branch
+
+git stash  "to do area"  jesli nie chcesz czegos jeszcze komittowac tylko zostawic na pozniej
+
+git flow is a way to organize your branches
+
+git amend    cofnij  you cannot amend a pushed commit
+
+git reset   resetuje commitowane
+
+mixed reset  restetuje wszystkie commity
+
