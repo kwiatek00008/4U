@@ -1,0 +1,38 @@
+body{
+    background-color:lightgray;
+}
+section{
+    width: 80%;
+    margin: 100px auto;
+    background-color: grey;
+    color:white;
+    font-size: 80px;
+    font-family: sans-serif;
+    display: flex;  
+    flex-wrap: wrap;
+    
+    /* align-items: center; */
+    height: 50vh;
+    justify-content: space-evenly;
+    align-content: space-evenly ;
+}
+div{
+    text-align: center;   
+    flex-basis: 40%;
+    height: 30%;  
+}
+
+.f1 {
+    background-color: cadetblue;
+    
+}
+.f2{
+    background-color: darkred;
+}
+
+.f3{
+    background-color: darkgreen;
+}
+.f4{
+    background-color: darkorange;
+}
