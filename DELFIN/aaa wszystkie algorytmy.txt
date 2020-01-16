@@ -1,0 +1,9 @@
+b¹belkowe                 tak	
+prostego wyboru		  tak
+prostego wsawiania	  tak
+wstawianie binarne	  tak
+kube³kowe i pozycyjne
+przez scalanie
+shella
+stagowe
+szybkie quicksort         tak

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    img{
+        /* pozycja lewy dolny kwadrat */
+        position: absolute;
+        top:25%;
+        left: 25%;
+        /* transform-origin: 50%,50%; */
+        /* transfor origin 0 0 obraca wg lewego gornego naroznika zdjecia  */
+        transform: translate(-50%, -50%)
+        scale(0.5);
+
+        /* przesuwnaie */
+        /* scale(-2 , -2) rotate(45deg); */
+        /* rotate 45deg */
+        /* scale (-2,2) */
+        /* powiekszanie */
+
+        animation: obrot 10s infinite linear,path 10s infinite 
+        linear;
+        /* animation: path 2s infinite;  animacja lata  linear, ease*/
+    }
+    @keyframes path{
+        0%{
+            top: 25%;
+            left: 25%;
+        }
+
+        50%{
+            top: 25%;
+            left: 75%;
+        }
+
+        100%{
+            top: 25%;
+            left: 25%;
+        }
+    }
+    @keyframes obrot{
+        0%{
+            transform:rotate(0deg)
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+
+        100%{
+            transform:rotate(0deg)
+        }
+    }
+    /* latające logo */
+    
+    </style>
+</head>
+<body>
+    <img src="images/1.png" alt="">
+</body>
+</html>

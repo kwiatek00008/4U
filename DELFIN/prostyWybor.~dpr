@@ -1,0 +1,33 @@
+program prostyWybor;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var i,index,n,a :integer;
+  tab:array [0..10] of integer;
+  procedure losuj;
+  begin
+      randomize;
+      for i:=1 to n do
+      begin
+          tab[i]:=random(10);
+      end;
+  end;
+  procedure wypisz;
+  begin
+      for i:=1 to n do
+      begin
+      writeln(tab[i]);
+      end;
+  end;
+
+begin
+  losuj;
+  wypisz;
+
+  wypisz;
+  readln;
+end.
+ 
