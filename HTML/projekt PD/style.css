@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.napisynav{
+    position: absolute;
+    top: 25%;
+    right: 10%; 
+    display: flex;
+    flex-direction: row; 
+    color: white;
+    line-height: 1.1;
+}
+.picture1{
+    filter: brightness(60%);
+}
+.logo{
+    font-size: 60px;
+    text-align: right;
+    border-right: solid 6px;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+.dopisek{
+    font-size: 60px;
+    text-align: left;
+}

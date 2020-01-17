@@ -17,3 +17,12 @@ C:\Users\kwiat\Documents\Visual Studio 2013\Projects\CZY NAPEWNO ZAMKNAC OKNO\Wi
 C:\Users\kwiat\Documents\Visual Studio 2013\Projects\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\kwiat\Documents\Visual Studio 2013\Projects\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 C:\Users\kwiat\Documents\Visual Studio 2013\Projects\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+D:\Program Files (x86)\Git\4U\C# PC\CZY NAPEWNO ZAMKNAC OKNO\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
