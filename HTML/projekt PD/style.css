@@ -64,7 +64,7 @@ article{
 }
 .rectangle1{
     width: 70vw;
-    height: 20vh;
+    height: 20vw;
     background-color: #416496;
     flex-direction: row;
     padding-left: 15vw;
@@ -137,7 +137,7 @@ h1{
 
 .rectangle3{
     width: 70vw;
-    height: 20vh;
+    height: 20vw;
     background-color: #416496;
     flex-direction: row;
     padding-left: 15vw;
