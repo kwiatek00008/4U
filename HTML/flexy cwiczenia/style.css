@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 200vh;
+}
+.rectangle{
+    width: 100vw;
+    height: 100vw;
+    background-color:teal;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.p1{
+    width: 85vw;
+    height: 20vw;
+    background-color: cadetblue;
+}
+.p2{
+    width: 85vw;
+    height: 20vw;
+    background-color: yellowgreen;
+    float:right;
+    margin-left: 15%;
+}
+.p3{
+    width: 85vw;
+    height: 20vw;
+    background-color: violet;
+}
+.p4{
+    width: 85vw;
+    height: 20vw;
+    background-color: tomato;
+    margin-left: 15%;
+}
