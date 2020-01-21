@@ -1,0 +1,18 @@
+uses
+sysuntils;
+var n,i:integer;
+var p:real;
+function silrek(x:integer):real;
+begin
+if x<1 then silrek:=1
+else silrek:=x*silrek(x-1);
+end;
+begin
+write('podaj n:'); readln(n);
+for i:=0 to n do
+begin
+p:=silrek(i);
+writeln('silnia(',i,')=',p:0:0);
+end;
+readln;
+end.

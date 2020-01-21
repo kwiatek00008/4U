@@ -1,0 +1,95 @@
+program BednarekM;
+
+{$APPTYPE CONSOLE}
+ //Zad 3  dynamiczna lista uczniów imie i nazwisko
+ //Zad 4 wyszukanie nazwizku i wstaienie nowego ucznia za
+uses
+  SysUtils;
+
+TYPE  PElem = ^TElem;
+      TElem = RECORD
+                imie: string;
+                nazwisko: string;
+                wsk :PElem;
+              END;
+VAR q,poczatek,glowa,temp,koniec,biezacy,po,na:PElem;
+    n,licz,aa:integer;
+    d,k:string;
+
+function ListSearchNaz(head:PElem;k:string):PElem;
+begin
+  while (head <> nil) and (k <> head^.nazwisko) do
+    head := head^.wsk;
+  ListSearchNaz := head;
+end;
+
+function ListSearchImi(head:PElem;k:string):PElem;
+begin
+  while (head <> nil) and (k <> head^.imie) do
+    head := head^.wsk;
+  ListSearchImi := head;
+end;
+procedure TworzListePocz(n:integer);
+begin
+   poczatek:=nil;
+   WHILE n>0 DO
+    BEGIN
+      new(q);
+      q^.wsk:=poczatek;
+      poczatek:=q;
+      write('Podaj imie: '); readln(k);
+      poczatek^.imie:=k;
+      write('Podaj nazwisko: ');readln(k);
+      poczatek^.nazwisko:=k;
+      n:=n-1;
+    END;
+end;
+
+
+procedure WypiszListe;
+var pom,q:PElem;
+begin
+  writeln;
+  pom:=poczatek;
+  WHILE pom<>NIL DO
+   BEGIN
+      q:=pom;
+      write('    ',q^.imie,'  ',q^.nazwisko);
+      pom:=q^.wsk;
+   END;
+  writeln;
+end;
+  Procedure DodajZa(w:string);
+BEGIN
+      po:=biezacy;
+      na:=biezacy^.wsk;
+      NEW(biezacy);
+      biezacy^.nazwisko:=w;
+      biezacy^.wsk:=na;
+      po^.wsk:=biezacy;
+End;
+
+
+Begin
+
+     write('Podaj ilosc osob do wstawienia '); readln(n);
+
+     writeln(' *** tworzenie listy imion i nazwisk *** ');
+     TworzListePocz(n);
+     glowa:=poczatek;
+     WypiszListe;
+       writeln;
+      writeln;
+     // dodanie - przed biezacym
+     writeln;
+     write('Za ktore nazwisko wstawic: ');readln(d);
+     write('Jakie imie i nazisko: ');readln(k);
+     biezacy:=ListSearchNaz(glowa,d);
+     if biezacy<>nil then DodajZa(k)
+                     else writeln('Nie istnieje ',d,' na liscie');
+     WypiszListe;
+      writeln;
+
+
+    readln;
+End.

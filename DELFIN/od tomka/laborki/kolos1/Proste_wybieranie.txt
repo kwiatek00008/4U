@@ -1,0 +1,38 @@
+program Proste_wstawianie;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+const nMax=100;
+type Tablica= array[0..100] of integer;
+var a:Tablica;
+var i,n:integer;
+procedure PW(var a:Tablica;n:integer);
+var i,j,pom:integer;
+begin
+  for i:=2 to n do
+     begin
+     pom:=a[i];j:=i-1;
+      while(pom<a[j])do
+       begin a[j+1]:=a[j];j:=j-1;end;
+  a[j+1]:=pom;
+end;end;
+
+begin
+randomize;
+write('Podaj n od 0 do 100 = ');readln(n);
+writeln('Ciag liczb nieposortowanych');
+for i:=0 to n do
+ begin
+ a[i]:=random(100)+1;
+ write(a[i]:4);
+ end;
+PW(a,n);
+writeln;
+writeln('Wynik sortowania');
+for i:=0 to n do
+write(' ',a[i]:4);
+readln;
+end.

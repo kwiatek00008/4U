@@ -1,0 +1,30 @@
+program kwadratowe;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+var
+  p,q,x1,x2:real;
+
+begin
+  Write('p='); ReadLn(p);
+  Write('q='); ReadLn(q);
+  x1 := p+sqrt(p*p-q);
+  x2 := p-sqrt(p*p-q);
+
+  Writeln('x1=',x1:0:20,' x2=',x2:0:20);
+  if p>=0 then
+    begin
+      x1:=p+sqrt(p*p-q);
+      x2:=q/x1;
+    end
+  else
+    begin
+      x2:=p-sqrt(p*p-q);
+      x1:=q/x2;
+    end;
+  Writeln('x1=',x1:0:20,' x2=',x2:0:20);
+  readln(p);
+
+end.

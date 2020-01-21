@@ -1,0 +1,28 @@
+program Euklides;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var a: integer;
+    b: integer;
+
+begin
+  repeat
+    writeln('Podaj liczbe a: ');
+    readln(a);
+  until a>0;
+
+  repeat
+    writeln('Podaj liczbe b: ');
+    readln(b);
+   until b>0;
+  while a<>b do
+    begin
+      if a>b then a:=a-b
+      else b:=b-a;
+    end;
+    writeln('NwD wynosi: ',a);
+    readln(b);
+end.

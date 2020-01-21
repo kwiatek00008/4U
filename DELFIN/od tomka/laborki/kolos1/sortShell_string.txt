@@ -1,0 +1,57 @@
+program sortShell_string;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var n,i:integer;
+Type TA = array [1..100] of string;
+var x:TA;
+Procedure sortShell (n: integer; var a:TA);
+var i,j,k: integer; x:string;
+begin
+  k:=1;
+  while 2*k+1<n do k:=k*2+1;
+  while k>0 do
+  begin
+    for i:=k+1 to n do
+    begin
+      x:=a[i];
+      j:=i-k;
+      while (j>0) and (UpperCase(x)<UpperCase(a[j])) do
+      begin
+        a[j+k]:=a[j];
+        j:=j-k;
+      end;
+      a[j+k]:=x;
+    end;
+    k:=k div 2;
+  end;
+end;
+
+begin
+  write('Podaj od 1 do 100  n= ');
+  readln(n);
+  writeln('Podaj imiona do posortowania');
+  for i:=1 to n do
+    begin
+      write(i,'. ');
+      readln(x[i]);
+    end;
+
+  writeln('Ciag nieposortowany');
+  for i:=1 to n do
+    begin
+      write(x[i]:4,' ')
+    end;
+  writeln(' ');
+  sortShell(n,x);
+  writeln('Ciag posortowany');
+  for i:=1 to n do
+    begin
+      write(x[i]:4,' ')
+    end;
+  writeln('');
+  readln;
+end.

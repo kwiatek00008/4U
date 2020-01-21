@@ -1,0 +1,49 @@
+program babelek_double;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var tab: array [0..100] of double;
+var i,n:integer;
+var a:double;
+
+Procedure SortBubble;
+var i,j:integer;
+var x:double;
+Begin
+   for i:=2 to n do
+    for j:=n downto i do
+    if tab[j-1]>tab[j] then
+      begin
+        x:=tab[j-1];
+        tab[j-1]:=tab[j];
+        tab[j]:=x;
+      end;
+end;
+begin
+  randomize;
+  write('Podaj ilosc liczb zmiennoprzecinkowych do podania: ');
+  readln(n);
+  for i:=1 to n do
+  begin
+  write(i,'. ');
+  readln(a);
+    tab[i]:=a;
+  end;
+
+  writeln('Przed sortowaniem ');
+  for i:=1 to n do
+  begin
+    write(tab[i]:8:4);
+  end;
+  writeln;
+  SortBubble;
+  writeln('Po sortowaniu');
+  for i:=1 to n do
+  begin
+    write(tab[i]:8:4);
+  end;
+   readln;
+end.

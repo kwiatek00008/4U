@@ -1,0 +1,37 @@
+program horner;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+  const
+  nMax=100;
+  var
+  x,n,i,wynik: integer;
+  tab: array [0..nMax] of integer;
+
+begin
+  write('Podaj stopien wielomianu: ');
+  readln(n);
+  write('Podaj wartosc zmiennej x: ');
+  readln(x);
+
+  for i:=0 to n do
+    begin
+      write('Podaj wspolczynnik', n-i, '-tego stopnia: ');
+      readln(tab[i]);
+    end;
+
+  wynik:=tab[0];
+
+  for i:=1 to n do
+    begin
+      wynik:=wynik*x+tab[i];
+    end;
+  writeln('Wartosc podanego wieomianu dla argumentu x=',x,' wynosi ',wynik);
+  readln(i);
+
+
+
+
+end.

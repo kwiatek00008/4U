@@ -1,0 +1,46 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+   type tab=array[1..100] of integer;
+   var n,i:integer;
+   x:tab;
+
+    procedure quicksort(d,g:integer);
+    var l,p,v,pom:integer;
+    begin
+    l:=d; p:=g; v:=x[(d+g) div 2];
+    repeat
+      while x[l]<v do l:=l+1;
+      while v<x[p] do p:=p-1;
+      if l<=p then
+        begin
+          pom:=x[l]; x[l]:=x[p]; x[p]:=pom; l:=l+1; p:=p-1;
+        end;
+    until l>p ;
+    if d<p then quicksort(d,p);
+    if l<g then quicksort(l,g);
+
+        end;
+        begin
+        randomize();
+        write('podaj ilosc losowanych liczb'); readln(n);
+        for i:=1 to n do
+          begin
+            x[i]:=random(100);
+            writeln('liczba',i,'w tablicy to:',x[i]);
+
+          end;
+          quicksort(1,n);
+          for i:=1 to n do
+            begin
+              writeln('liczba',i,'w tablicy posortowanej to:',x[i]);
+
+            end;
+
+  readln;
+end.

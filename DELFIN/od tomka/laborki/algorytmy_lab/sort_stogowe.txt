@@ -1,0 +1,58 @@
+program sort_stogowy;
+{$APPTYPE CONSOLE}
+uses
+  SysUtils;
+type OB=word;
+type  TA=array[1..160] of integer;
+var t:TA; n,i:word;a:TA;
+procedure przesianie(l,p:integer);
+procedure SortStogowy(n:word;var a:TA);
+{sort drzewiaste, kopcowanie stogowe}
+var l,p:integer;x:integer;
+Begin {tworzenie kopca}
+l:=(n div 2)+1;
+p:=n;
+while l>1 do
+  begin
+  l:=-l-1;
+  przesianie(l,p);
+  end;
+{sort kopca}
+while p>1 do
+  begin x:=a[1];a[1]:=a[p];a[p]:=x;p:=p-1;
+    przesianie(1,p);
+  end;
+end; {procedury}
+
+procedure przesianie(l,p:integer);
+var i,j:integer; x:OB;
+begin
+  i:=l; j:=2*i;x:=a[i];
+  while j<=p do
+    begin
+      if j<p then if a[j]<a[j+1] then j:=j+1;
+      if x>=a[j] then exit;
+      a[i]:=a[j]; i:=j; j:=2*i;
+    end;
+  a[i]:=x;
+end; {przesiania}
+
+
+begin
+  writeln('Rozmiar tablicy n=');readln(n);
+  randomize;
+  writeln('Liczby nieposortowane sortowaniem stogowym');
+  for i:=1 to n do
+    begin
+      t[i]:=random(100);
+      write(t[i]:4);
+    end;
+  SortStogowy(n,t);
+  writeln('Liczby posortowane sortowaniem stogowym');
+  for i:=1 to n do
+    begin
+      write(t[i]:4);
+    end;
+readln;
+end;
+end.

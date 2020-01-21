@@ -1,0 +1,34 @@
+program Fibbonacci;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var n,i:integer;
+  wynik:real;
+  licz:double;
+
+function Fib(n:integer):integer;
+  begin
+    licz:=licz+1;
+    if n=0 then Fib:=0
+    else if n=1 then Fib:=1
+    else Fib:=Fib(n-1)+Fib(n-2);
+  end;
+
+begin
+
+  writeln('Podaj liczbe: ');
+  readln(n);
+  for i:=0 to n do
+  begin
+    licz:=0;
+    wynik:=Fib(i);
+    writeln('Fibonacci[',i,']=',wynik:0:0,' liczba wywolan ', licz:0:0);
+
+  end;
+
+  readln(n);
+
+end.

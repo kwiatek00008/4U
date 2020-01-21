@@ -1,0 +1,46 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var i, j, nMax:integer;
+      x : array[1..100] of integer;
+
+      Procedure QuickSort(var d,g:integer);
+Var l,p,v,pom:integer;
+Begin
+   l:=d; p:=g;  v:=x[(d+g) div 2];
+   Repeat
+      while x[l]<v do l:=l+1;
+      while v<x[p] do p:=p-1;
+      if l<=p then begin
+                            pom:=x[l]; x[l]:=x[p]; x[p]:=pom; l:=l+1; p:=p-1;
+                          end;
+   until l>p;
+   If d<p then QuickSort(d,p);
+   If l<g then QuickSort(l,g);
+end;
+begin
+
+write('Podaj n: '); readln(nMax);
+         randomize;
+         for  i:=1 to  nMax do
+         begin
+         x[i] := random(100);
+         write(' ',x[i],' ');
+         end;
+         writeln('');
+         writeln('Posortowano:');
+         j:=1;
+         QuickSort( j,nMax);
+         for j:=1 to nMax do
+
+            begin   write(' ',x[j],' ');   end;
+
+
+
+         readln;
+end.
+ 

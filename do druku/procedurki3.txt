@@ -1,0 +1,104 @@
+//operowanie lista
+program lista3;
+{$APPTYPE CONSOLE}
+uses
+  SysUtils;
+
+TYPE  PElem = ^TElem;
+      TElem = RECORD
+                nr: integer;
+                dane : char;
+                wsk :PElem;
+              END;
+VAR q,poczatek,glowa,temp,koniec,biezacy,po,na:PElem;
+    n,d,licz,aa:integer;
+    k:char;
+
+function ListSearchChar(head:PElem;k:char):PElem;
+begin
+  while (head <> nil) and (k <> head^.dane) do
+    head := head^.wsk;
+  ListSearchChar := head;
+end;
+function ListSearchInt(head:PElem;d:integer):PElem;
+begin
+  while (head <> nil) and (d <> head^.nr) do
+    head := head^.wsk;
+  ListSearchInt := head;
+end;
+procedure TworzListePocz(n:integer);
+begin
+   poczatek:=nil;
+   WHILE n>0 DO
+    BEGIN
+      new(q);
+      q^.wsk:=poczatek;
+      poczatek:=q;
+      poczatek^.dane:=char(random(25)+97);
+      poczatek^.nr:=n;
+      n:=n-1;
+    END;
+end;
+
+
+procedure WypiszListe;
+var pom,q:PElem;
+begin
+  writeln;
+  pom:=poczatek;
+  WHILE pom<>NIL DO
+   BEGIN
+      q:=pom;
+      write('   ',q^.nr,'.',q^.dane);
+      pom:=q^.wsk;
+   END;
+  writeln;
+end;
+  Procedure DodajZa(w:char);
+BEGIN
+      po:=biezacy;
+      na:=biezacy^.wsk;
+      NEW(biezacy);
+      biezacy^.dane:=w;
+      biezacy^.wsk:=na;
+      po^.wsk:=biezacy;
+End;
+Procedure DodajPrzedStary(k:char);
+var {po,na:PElem;}
+    test:integer;
+begin
+    dodajZa(k);
+{przesuwanie przed biezacy}
+    test:=po^.nr;
+   // po^.dane:=biezacy^.dane;
+    biezacy^.nr:=test+1;
+
+
+end;
+
+Begin
+
+     write('Podaj dlugosc listy (0<n<100) n='); readln(n);
+
+     writeln(' tworzenie listy od poczatku wypelnionej znakami ');
+     TworzListePocz(n);
+     glowa:=poczatek;
+     WypiszListe;
+       writeln;
+      writeln;
+     // dodanie - przed biezacym
+     writeln;
+     write('Za ktory element wstawic? dane=');readln(d);
+     write('Jaka wartosc wstawic? k=');readln(k);
+     biezacy:=ListSearchInt(glowa,d);
+     if biezacy<>nil then DodajPrzedStary(k)
+                     else writeln('Nie istnieje ',d,' na liscie');
+     WypiszListe;
+     write('Poszukiwany element =' );readln(k);
+     temp:=ListSearchChar(glowa,k);
+     IF temp<>NIL THEN writeln('Znaleziony element na miejscu= ',temp^.nr)
+                  ELSE writeln('Nie znaleziono wartosci ',k);
+
+
+    readln;
+End.

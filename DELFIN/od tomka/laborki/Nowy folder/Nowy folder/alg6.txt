@@ -1,0 +1,51 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+   type tab=array[1..100] of integer;
+   var n,i,ile:integer;
+   a:tab;
+
+    procedure quicksort(var x:tab; d,g:integer);
+    var l,p,v,pom:integer;
+    begin
+    ile:=ile+1;
+    l:=d; p:=g; v:=x[(d+g) div 2];
+    repeat
+      while x[l]<v do l:=l+1;
+      while v<x[p] do p:=p-1;
+      if l<=p then
+        begin
+          pom:=x[l]; x[l]:=x[p]; x[p]:=pom; l:=l+1; p:=p-1;
+        end;
+    until l>p ;
+    if d<p then quicksort(x,d,p);
+    if l<g then quicksort(x,l,g);
+
+        end;
+        begin
+        randomize();  ile:=0;
+        write('podaj ilosc losowanych liczb'); readln(n);
+        writeln('liczby nieposortowane');
+        for i:=1 to n do
+          begin
+            a[i]:=random(100)+1;
+            writeln(a[i]:4);
+
+          end;
+          writeln;
+          writeln('liczby posortowane');
+          quicksort(a,1,n);
+          for i:=1 to n do
+            begin
+              writeln(a[i]:4);
+
+            end;
+            writeln('liczba wywolan rekurencyjnych:',ile);
+
+  readln;
+end.

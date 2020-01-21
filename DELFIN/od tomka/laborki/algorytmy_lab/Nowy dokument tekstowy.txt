@@ -1,0 +1,53 @@
+program dod_przesz_usuw;
+{$APPTYPE CONSOLE}
+uses
+  SysUtils;
+
+TYPE PElem=^TElem;
+     TElem=RECORD
+              dane:integer;
+              wsk:PElem;
+           END;
+VAR q,poczatek,temp,glowa:PElem;
+    n,koniec,poz:integer;
+
+function ListSearch(head:PElem;koniec:integer):PElem;
+begin
+  poz:=1;
+  while (head<>nil) and (koniec<>head^.dane) do
+     begin head := head^.wsk; poz:=poz+1; end;
+  ListSearch:=head;
+end;
+
+Begin {program glowny}
+  write('Podaj dlugosc listy : n=');readln(n);
+
+  writeln; writeln('*** tworzenie listy ***');
+  poczatek:=nil; randomize;
+  WHILE n>0 DO
+    BEGIN
+       new(q);
+       q^.wsk:=poczatek;
+       poczatek:=q;
+       poczatek^.dane:=random(100+n);
+       write(' e ',n,'=',poczatek^.dane);
+       n:=n-1;
+    END;
+  glowa:=poczatek;
+
+  writeln; writeln;
+  writeln('*** wypisywanie listy ***');
+  WHILE poczatek<>NIL DO
+    BEGIN
+       q:=poczatek;
+       write('   ',q^.dane);
+       poczatek:=q^.wsk;
+    END;
+
+  writeln;writeln;
+  write('Poszukiwana liczba = ' );readln(koniec);
+  temp:=ListSearch(glowa,koniec);
+  IF temp<>NIL THEN writeln('Znaleziono liczbe ',temp^.dane,' na pozycji: ',poz)
+               ELSE writeln('Nie znaleziono liczby ',koniec);
+  readln;
+End.

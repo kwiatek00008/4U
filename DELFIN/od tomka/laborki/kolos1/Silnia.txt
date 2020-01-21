@@ -1,0 +1,26 @@
+program Silniaa;
+
+{$APPTYPE CONSOLE}
+
+uses SysUtils;
+  function Silnia(n:integer):integer;
+  begin
+    if n=0 then Silnia:=1a
+    else Silnia:=n*Silnia(n-1);
+  end;
+
+  var n,i:integer;
+  wynik:real;
+
+
+begin
+  writeln('Podaj liczbe: ');
+  readln(n);
+  for i:=0 to n do
+  begin
+    wynik:=Silnia(i);
+    writeln(wynik:0:0);
+  end;
+  readln(n);
+
+end.

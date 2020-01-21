@@ -1,0 +1,55 @@
+program tworzenie_wypisywanie_listy_proceduryv2;
+uses SysUtils; {$APPTYPE CONSOLE}
+type PEIem=^TEIem;
+  TEIem=RECORD
+      dane:integer; wsk:PEIem;
+  end;
+var q,poczatek,poczatek1,koniec:PEIem;n:integer;
+procedure tworzenieListyPocz(n:integer);
+  begin
+    poczatek:=nil;
+    while n>0 do
+     begin
+      new(q);
+      q^.wsk:=poczatek;
+      poczatek:=q;
+      poczatek^.dane:=n;
+      n:=n-1;
+     end;
+  end;
+procedure tworzenieListyKon(n:integer);
+var k:integer;
+  begin
+    poczatek:=nil; koniec:=nil;
+    k:=0;
+    while k<n do
+      begin
+        new(q);
+        q^.wsk:=nil;
+        if koniec<>nil then koniec^.wsk:=q
+                        else poczatek:=q;
+        koniec:=q;
+        k:=k+1;
+        koniec^.dane:=k;
+      end;
+    writeln;
+    writeln('POCZ=',poczatek^.dane,'KON=',koniec^.dane);
+  end;
+procedure wypiszListe();
+  begin
+     while poczatek<>nil do
+    begin
+      q:=poczatek;
+      write(' ',q^.dane);
+      poczatek:=q^.wsk;
+    end;
+  end;
+begin
+write('Podaj dl listy (0<n<100) n='); readln(n); //tworzenieListyPocz(n);
+tworzenieListyKon(n); poczatek1:=poczatek;
+writeln; writeln('Wypisanie listy: ');
+wypiszListe(); poczatek:=poczatek1;
+writeln; writeln('Ponownie lista: ');
+wypiszListe();
+readln;
+end.

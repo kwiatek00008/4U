@@ -1,0 +1,54 @@
+program stos;
+{$APPTYPE CONSOLE}
+uses SysUtils;
+type PEIem=^TEIem;
+TEIem=RECORD
+  dane:integer;
+  wsk:PEIem;
+end;
+var q,temp,wierzcholek,wierzcholek1:PEIem;
+  W,n:integer;
+procedure tworzenieStosu(n:integer);
+begin
+  wierzcholek:=nil;
+    begin
+      new(q);
+      q^.wsk:=wierzcholek;
+      wierzcholek:=q;
+      wierzcholek^.dane:=n;
+      n:=n-1;
+    end;
+end;
+procedure wypiszStos;
+var wierzcholekP:PEIem;
+begin
+  writeln; writeln('Aktualny Stos:');
+  wierzcholekP:=wierzcholek;
+  while wierzcholekP<>nil do
+  begin
+    write(' ',wierzcholekP^.dane);
+    wierzcholekP:=wierzcholekP^.wsk;
+  end;
+end;
+procedure dodajdostosu();
+begin
+  write('Jaka wartosc dodac='); readln(w);
+  temp:=wierzcholek;
+  new(wierzcholek);
+  wierzcholek^.dane:=W;
+  wierzcholek^.wsk:=temp;
+end;
+procedure zdejmijzestosu();
+begin
+  if wierzcholek<>nil then begin
+  W:=wierzcholek^.dane; temp:=wierzcholek^.wsk;
+  DISPOSE(wierzcholek); wierzcholek:=temp;
+end;
+begin
+  write('Podaj dl stosu (0<n<100) n='); readln(n);
+  tworzenieStosu(n); wierzcholek1:=wierzcholek; wypiszstos; dodajdostosu;
+  wierzcholek1:=wierzcholek; wypiszstos; zdejmijzestosu;
+  wierzcholek1:=wierzcholek; wypiszstos;
+readln;
+end;
+end; end.

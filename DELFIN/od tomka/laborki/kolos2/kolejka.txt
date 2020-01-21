@@ -1,0 +1,90 @@
+program kolejka;
+{$APPTYPE CONSOLE}
+uses
+  SysUtils;
+
+TYPE  PElem = ^TElem;
+      TElem = RECORD
+                dane: integer;
+                wsk :PElem;
+              END;
+VAR  poczatek1,poczatek,koniec,temp,q:PElem;
+     W,n,k:integer;
+
+procedure TworzKolejka(n:integer);
+var k:integer;
+begin
+  poczatek:=NIL; koniec:=NIL;
+  k:=n;
+  WHILE k>0 DO
+   begin
+    NEW(q);
+    q^.wsk:=poczatek;
+    poczatek:=q;
+    poczatek^.dane:=random(k+100);
+    IF k=n THEN koniec:=poczatek;
+    k:=k-1;
+   end;
+  writeln('POCZATEK: ',poczatek^.dane,' KONIEC: ',koniec^.dane);
+end;
+
+procedure WypiszKolejka;
+var pom:PElem;
+begin
+  pom:=poczatek;
+  WHILE pom<>NIL DO
+   begin
+    write('   ',pom^.dane);
+    pom:=pom^.wsk;
+   end;
+  writeln;
+end;
+
+procedure DodajDoKolejki;
+var temp:PElem;
+begin
+  write('Jaka wartosc dodac =');readln(w);
+  temp:=koniec;
+  NEW(koniec);
+  koniec^.dane:=W;
+  koniec^.wsk:=NIL;
+  IF temp<>NIL THEN temp^.wsk:=koniec;
+  writeln('POCZATEK: ',poczatek^.dane,' KONIEC: ',koniec^.dane);
+end;
+
+procedure UsunZKolejki;
+var temp:PElem;
+begin
+  IF poczatek <> nil THEN
+   BEGIN
+    W := poczatek^.dane;
+    temp := poczatek^.wsk;
+    DISPOSE(poczatek);
+    poczatek := temp;
+   END;
+  IF poczatek=NIL THEN koniec:=NIL;
+  writeln('Usunieto: ',w);
+  writeln('POCZATEK: ',poczatek^.dane,' KONIEC: ',koniec^.dane);
+end;
+
+BEGIN
+
+  writeln;
+  writeln('*** tworzenie kolejki ***');
+  write('Liczba elementow kolejki n=');readln(n);
+  TworzKolejka(n);
+  poczatek1:=poczatek;
+  WypiszKolejka;
+
+  writeln;
+  writeln('*** dodawanie do kolejki ***');
+  DodajDoKolejki;
+  WypiszKolejka;
+
+  writeln;
+  writeln('*** usuwanie z kolejki ***');
+  UsunZKolejki;
+  WypiszKolejka;
+
+  readln;
+END.

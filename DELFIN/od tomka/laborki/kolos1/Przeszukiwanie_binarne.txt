@@ -1,0 +1,34 @@
+program Przeszukiwanie_binarne;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+const nmax=20;
+  var po,ko,sr,n,i,szuk:integer;
+  a:array[1..20]of integer;
+
+begin
+  write('Podaj n (0<n<=',nmax,')= ');readln(n);
+  write('Podaj szukana= ');readln(szuk);
+
+  for i:=1 to n do
+    begin
+      a[i]:=i;
+      writeln(a[i]);
+    end;
+    po:=1;
+    ko:=n;
+
+    while po<=ko do
+      begin
+        sr:=(po+ko) div 2;
+        if a[sr]<szuk then po:=sr+1
+          else if a[sr]>szuk then ko:=sr-1
+          else begin writeln('pozycja=',sr); ko:=po-1;
+          end;
+      end;
+  readln;
+
+end.

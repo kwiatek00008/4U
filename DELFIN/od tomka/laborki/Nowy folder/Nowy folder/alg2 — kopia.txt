@@ -1,0 +1,22 @@
+uses
+sysuntils;
+var n,i:integer;
+var p:real;
+var licz:real;
+
+function fibo(x:integer):real;
+begin
+licz:=licz+1;
+if x<2 then fibo:=x
+else fibo:=fibo(x-1)+fibo(x-2);
+end;
+begin
+writle('podaj n:'); readln(n);
+for i:=0 to n do
+begin
+licz:=0;
+p:=fibo(i);
+writln('fibo(',i,')=",p:0:0,'liczba wywo³añ',licz:0:0);
+end;
+readln;
+end.

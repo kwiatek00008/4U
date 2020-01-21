@@ -1,0 +1,177 @@
+//operowanie lista
+program CerateList1;
+{$APPTYPE CONSOLE}
+uses SysUtils;
+
+TYPE  PElem = ^TElem;
+      TElem = RECORD
+                dane : integer;
+                wsk :PElem;
+              END;
+VAR q,poczatek,glowa,temp,koniec,biezacy,po,na:PElem;
+    n,k,d:integer;
+
+function ListSearch(head:PElem;k:integer):PElem;
+begin
+  while (head <> nil) and (k <> head^.dane) do
+    head := head^.wsk;
+  ListSearch := head;
+end;
+
+procedure TworzListePocz(n:integer);
+begin
+   poczatek:=nil;
+   WHILE n>0 DO
+    BEGIN
+      new(q);
+      q^.wsk:=poczatek;
+      poczatek:=q;
+      poczatek^.dane:=n;
+      n:=n-1;
+    END;
+end;
+
+procedure TworzListeKoniec(n:integer);
+Begin
+  koniec:=nil; poczatek:=nil;
+  WHILE n>0 DO
+   BEGIN
+     new(q);
+     q^.wsk:=nil;
+     IF koniec<>nil THEN koniec^.wsk:=q
+                    ELSE poczatek:=q;
+     koniec:=q;
+     koniec^.dane:=n;
+     n:=n-1;
+  End;
+End;
+
+procedure WypiszListe;
+var pom,q:PElem;
+begin
+  writeln;
+  pom:=poczatek;
+  WHILE pom<>NIL DO
+   BEGIN
+      q:=pom;
+      write('   ',q^.dane);
+      pom:=q^.wsk;
+   END;
+  writeln;
+end;
+
+//Dodawanie elementu do orodka listy
+//(za elementem wskazanym przez bie?1cy)
+Procedure DodajZa(w:integer);
+BEGIN
+      po:=biezacy;
+      na:=biezacy^.wsk;
+      NEW(biezacy);
+      biezacy^.dane:=w;
+      biezacy^.wsk:=na;
+      po^.wsk:=biezacy;
+End;
+
+
+Procedure DodajPrzedNowy(k:integer);
+var po,na:PElem;
+    test:integer;
+begin
+{dodawanie elementu za biezacym}
+    po:=biezacy;
+    na:=biezacy^.wsk;
+    NEW(biezacy);
+    biezacy^.dane:=k;
+    biezacy^.wsk:=na;
+    po^.wsk:=biezacy;
+{przesuwanie przed biezacy}
+    test:=po^.dane;
+    po^.dane:=biezacy^.dane;
+    biezacy^.dane:=test;
+end;
+
+Procedure DodajPrzedStary(k:integer);
+var {po,na:PElem;}
+    test:integer;
+begin
+    dodajZa(k);
+{przesuwanie przed biezacy}
+    test:=po^.dane;
+    po^.dane:=biezacy^.dane;
+    biezacy^.dane:=test;
+end;
+
+Procedure UsunZa(var w:integer);
+BEGIN
+   new(na);
+   na:=biezacy^.wsk;
+   w:=na^.dane;
+   biezacy^.wsk:=na^.wsk;
+   Dispose(na);
+END;
+
+Procedure Usun(var w:integer);
+BEGIN
+   new(na);
+   na:=biezacy^.wsk;
+   w:=biezacy^.dane;
+   Biezacy^.wsk:=na^.wsk;
+   Biezacy^.dane:=na^.dane;
+   Dispose(na);
+End;
+
+
+Begin
+
+     write('Podaj dlugosc listy (0<n<100) n='); readln(n);
+//     writeln('*** tworzenie listy od poczatku ***');
+//     TworzListePocz(n);
+//     glowa:=poczatek;
+//     WypiszListe;
+
+     writeln('*** tworzenie listy od konca ***');
+     TworzListeKoniec(n);
+     glowa:=poczatek;
+     WypiszListe;
+
+//wyszukiwanie elementu z listy
+     writeln;
+     write('Poszukiwany element dane=' );readln(k);
+     temp:=ListSearch(glowa,k);
+     IF temp<>NIL THEN writeln('Znaleziona dana = ',temp^.dane)
+                  ELSE writeln('Nie znaleziono wartosci ',k);
+
+//dodanie do srodka - za biezacy
+     writeln;
+     write('Za ktory element wstawic? dane=');readln(d);
+     write('Jaka wartosc wstawic? k=');readln(k);
+     biezacy:=ListSearch(glowa,d);
+     if biezacy<>nil then DodajZa(k)
+                     else writeln('Nie istnieje ',d,' na liscie');
+     WypiszListe;
+
+// dodanie - przed biezacym
+     writeln;
+     write('Przed ktory element wstawic? dane=');readln(d);
+     write('Jaka wartosc wstawic? k=');readln(k);
+     biezacy:=ListSearch(glowa,d);
+     if biezacy<>nil then DodajPrzedStary(k)
+                     else writeln('Nie istnieje ',d,' na liscie');
+     WypiszListe;
+
+//usuwanie za biezacym
+     writeln; write('Za ktorym elementem usunac? dane=');readln(d);
+     biezacy:=ListSearch(glowa,d);
+     if biezacy<>nil then begin UsunZa(d);writeln('Usunieto ',d); end
+                     else writeln('Nie istnieje ',d);
+     WypiszListe;
+
+//usuwanie biezacego
+     writeln; write('Ktory element usunac? dane=');readln(d);
+     biezacy:=ListSearch(glowa,d);
+     if biezacy<>nil then begin Usun(d);writeln('Usunieto ',d); end
+                     else writeln('Nie istnieje ',d);
+     WypiszListe;
+
+    readln;
+End.

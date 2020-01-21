@@ -1,0 +1,30 @@
+//ciag fibonacciego
+program ciag_fibbonaciego;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+    wynik, n, i: integer;
+    tab:array[0..100] of integer;
+
+begin
+    repeat
+    begin
+      write('Podaj liczbe n= ');
+      readln(n);
+    end
+    until (n>0);
+    tab[0]:=0;
+    tab[1]:=1;
+    writeln(tab[0]);
+    writeln(tab[1]);
+    for i:=2 to n do
+    begin
+      tab[i]:=tab[i-1]+tab[i-2];
+      writeln(tab[i]);
+    end;
+    readln(i);
+end.

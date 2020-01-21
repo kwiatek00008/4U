@@ -1,0 +1,36 @@
+program Przeszukiwanie_liniowe;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+  const
+    nMax=100;
+  var
+    n,szukana,i, suma: integer;
+    tab: array[1..nMax] of integer;
+
+begin
+  write('Podaj ilosc elementow w ciagu: ');
+  readln(n);
+  write('Podaj szukany element: ');
+  readln(szukana);
+
+  suma:=0;
+
+  for i:=1 to n do
+    begin
+      write('Podaj ',i,' element ciagu ');
+      readln(tab[i]);
+      if tab[i]=szukana then
+        begin
+          suma:=suma+1;
+          writeln('Znaleziono ', szukana,' na pozycji ', i);
+        end;
+    end;
+
+  writeln('Liczba ', szukana, ' wystapila ', suma, ' razy');
+  readln(i);
+
+
+end.

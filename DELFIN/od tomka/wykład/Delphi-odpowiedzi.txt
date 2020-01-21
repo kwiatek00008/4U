@@ -1,0 +1,45 @@
+1. Y jest procedur¹
+2. To Fa³sz
+3. To Fa³sz
+4. Transmisji danych
+5. Zdanie jest fa³szywe
+6. jest równa n - 1
+7. To fa³sz
+8. to fa³sz
+9. Rozstrzygalnego
+10. Strukturalnymi
+11. to prawda
+12. to prawda
+13. Z³o¿onoœæ asymptotyczna
+14. Algorytmy klasyczne
+15. Algorytmy wspó³cznesne
+16. Jest rzêdu N^2
+17. To fa³sz
+18. Zawiesi siê program
+19. To prawda
+20. Zdanie prawdziwe
+21. b jest tablic¹ dwuwymiarow¹
+22.
+23. Wynosi O(n^2)
+24.
+
+Zadanie 2: Wypisze 0,1,2,3,4,5
+Zadanie 3a: function Fib - efektem jest wypisanie k-tej liczby ci¹gu fibonacciego
+			   Rodzaj algorytmu: iteracyjny
+			   Z³o¿onoœæ czasowa O(n)
+Zadanie 3b: Function wyszukaj - Efekt wykonania to wyszukanie a w tym przypadku wed³ug nazwiska
+				Z³o¿onoœæ obliczeniowa tego algorytmu jest równa O(n).
+				Rodzaj algorytmu: iteracyjny 
+
+Zadanie 5a: 1)Przypisanie wierzcholka do zmiennej temp
+	    2)Tworzenie nowego drzewa elementów wierzcho³ka
+	    3)Przypisanie do nowego drzewa elementów wierzcho³ka wskaŸnik pod nazw¹ W która zaweira dane
+	    4) 
+Zadanie 5b: 
+	1) przypisanie do q zmiennej pocz¹tek
+	2) Stworzenie pêtli która bêdzie sie wykonywaæ dopóki q jest ró¿ne od 0
+	3) wypisanie danych ze wskaŸnika q^.dane
+	4) przypisanie do q wskaŸnika q^.wsk
+
+Zadanie 5c: Warunek drzewa binarnego posortowanego:
+	Wszystkie elementy w lewym poddrzewie < korzeñ < wszystkie elementy w prawym poddrzewie

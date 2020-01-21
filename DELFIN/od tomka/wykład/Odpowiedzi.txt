@@ -1,0 +1,43 @@
+1. B
+2. B
+3. B
+4. B
+5. A
+6. B
+7. B
+8. B
+9. A
+10. B
+11. B
+12. B
+13. B
+14. B
+15. B
+16. A
+17. B
+18. B
+19. A
+20. A
+21. B
+22. Nic
+23. B
+24. Nic
+
+Zadanie 2
+Zostan¹ wydrukowane nastêpuj¹ce wartoœci: 0, 1, 2, 3, 4, 5
+
+Zadanie 3
+Efektem wykonania tej funkcji bêdzie wypisanie k-tego elementu ci¹gu fibonacciego, jest to algorytm iteracyjny o z³ozonoœci O(n)
+
+Zadanie 3
+Efektem wykonania tej funkcji bêdzie wyszukanie elementu wed³ug nazwiska, jest to algorytm iteracyjny o z³ozonoœci O(n)
+
+Zadanie 5
+tu sobie wymysliæ swoimi s³owami
+
+Zadanie 5
+[logk (N+1)] <= wysokoœæ drzewa rzêdu k o N wêz³ach <= N
+
+Zadanie 5
+Dzrewo binarne nazywamy posortowanym, jeœli spe³nia nastêpuj¹cy warunek
+wszystkie elementy w lewym poddrzewie < KORZEÑ < wszystkie elementy w prawym poddrzewie
