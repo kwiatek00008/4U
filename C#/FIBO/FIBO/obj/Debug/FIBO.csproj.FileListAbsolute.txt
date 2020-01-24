@@ -7,3 +7,12 @@ c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.P
 c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.csproj.GenerateResource.Cache
 c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.exe
 c:\users\rafał\documents\visual studio 2013\Projects\FIBO\FIBO\obj\Debug\FIBO.pdb
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\bin\Debug\FIBO.exe.config
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\obj\Debug\FIBO.exe
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\obj\Debug\FIBO.pdb
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\bin\Debug\FIBO.exe
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\bin\Debug\FIBO.pdb
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\obj\Debug\FIBO.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\obj\Debug\FIBO.Form1.resources
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\obj\Debug\FIBO.Properties.Resources.resources
+D:\Program Files (x86)\Git\4U\C#\FIBO\FIBO\obj\Debug\FIBO.csproj.GenerateResource.Cache
